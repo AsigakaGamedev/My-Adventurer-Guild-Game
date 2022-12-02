@@ -6,21 +6,21 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Databases/Characters Database")]
 public class CharactersDatabase : ScriptableObject
 {
-    [SerializeField] private CharacterController[] characterPrefabs;
+    [SerializeField] private CharacterHandler[] characterPrefabs;
 
     [Space]
     [SerializeField] private string getTestCharacterId;
 
-    private Dictionary<string, CharacterController> charactersCache = new Dictionary<string, CharacterController>();
+    private Dictionary<string, CharacterHandler> charactersCache = new Dictionary<string, CharacterHandler>();
 
-    public Dictionary<string, CharacterController> CharactersCache { get => charactersCache; }
+    public Dictionary<string, CharacterHandler> CharactersCache { get => charactersCache; }
 
     [Button]
     public void InitializeDatabase()
     {
-        charactersCache = new Dictionary<string, CharacterController>();
+        charactersCache = new Dictionary<string, CharacterHandler>();
 
-        foreach (CharacterController characterPrefab in characterPrefabs)
+        foreach (CharacterHandler characterPrefab in characterPrefabs)
         {
             charactersCache.Add(characterPrefab.CharacterID, characterPrefab);
         }

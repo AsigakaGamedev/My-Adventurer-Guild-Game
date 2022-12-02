@@ -6,8 +6,8 @@ using UnityEngine;
 public struct CharacterItem
 {
     [SerializeField] private string characterId;
-    [SerializeField] private CharacterController characterPrefab;
+    [SerializeField] private CharacterHandler characterPrefab;
 
     public string CharacterId { get => characterId; }
-    public CharacterController CharacterPrefab { get => characterPrefab; }
+    public CharacterHandler CharacterPrefab { get => characterPrefab; }
 }
