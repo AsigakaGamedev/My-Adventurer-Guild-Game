@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7429985cebdea6c46871661cd4203d2e, type: 3}
+  m_Name: frail trait
+  m_EditorClassIdentifier: 
+  id: frail
+  nameKey: 
+  descriptionKey: 
+  traitCharacteristics:
+  - characteristicId: health
+    minValue: 0
+    maxValue: -25
+    value: -25
+  - characteristicId: base_damage
+    minValue: 0
+    maxValue: -10
+    value: -10
+  oppositeTraits:
+  - {fileID: 11400000, guid: 6f79e3b57acc1ef46996f1d2bd66cca7, type: 2}
